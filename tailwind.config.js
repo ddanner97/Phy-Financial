@@ -4,17 +4,17 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", 
     "./src/components/**/*.{js,jsx}", 
     "./src/components/buttons/**/*.{js,jsx}", 
-    "./src/components/inputs/**/*.{js,jsx}",
+    "./src/components/inputs/**/*.{js,jsx}", 
   ],
   theme: {
     extend: {
       colors: {
         primary: "#EFE7E7",
         secondary: "#262523",
-        gold: "DEBB86"
+        gold: "#DEBB86"
       },
       fontFamily: {
-        poppins: ["Roboto", "sans-serif"],
+        poppins: ["Satoshi","Poppins", "sans-serif"],
       },
     },
     screens: {
