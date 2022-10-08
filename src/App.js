@@ -110,7 +110,7 @@ function App() {
                 </li>
 
                 <li className='my-8'>
-                  <a className='mx-2 text-4xl border-b-2'>Contact</a>
+                  <a className='mx-2 text-4xl border-b-2' href="#contact" onClick={() => setViewSidebar(false)}>Contact</a>
                 </li>
               </ul>
             </div>
