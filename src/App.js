@@ -30,7 +30,7 @@ function App() {
       trigger: elem,
       start: "top 80%",
       end: "bottom 20%",
-      markers: true,
+      markers: false,
       onEnter: function () {
         gsap.fromTo(
           elem,
@@ -124,7 +124,7 @@ function App() {
         </div>
 
         {/* Home - Hero Section */}
-          <div id="home" className='revealUp h-screen'>
+          <div id="home" className='h-screen'>
             <div className='pt-8'>
               <img src={kc}></img>
             </div>
