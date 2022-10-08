@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './main.css'
 
+// Component
+import ContactForm from './components/ContactForm';
+
 function App() {
 
   const [loading, setLoading] = useState(true)
@@ -90,42 +93,7 @@ function App() {
           {/* About */}
 
           {/* Contact */}
-          <div id="contact" className="contact h-screen">
-            <h1 className='pt-4 text-3xl'>Contact</h1>
-
-            <form>
-              <div className="name flex justify-between my-2">
-                <div className="first-name flex flex-col">
-                  <label for="fname">First name:</label>
-                  <input className=' bg-primary border-2 border-secondary' type="text" id="fname" name="fname"/>
-                </div>
-
-                <div className="last-name flex flex-col">
-                  <label for="lname">Last name:</label>
-                  <input className=' bg-primary border-2 border-secondary' type="text" id="lname" name="lname"/>
-                </div>
-              </div>
-
-              <div className="email flex flex-col my-2">
-                <label for="email">Email:</label>
-                <input className=" bg-primary border-2 border-secondary" type="text" id="email" name="email"/>
-              </div>
-
-              <div className="message flex flex-col my-2">
-                <label for="email">Message:</label>
-                <input className='py-10 bg-primary border-2 border-secondary' type="text" id="email" name="email"/>
-              </div>
-
-              <div className='flex'>
-                <div className='grow'>
-
-                </div>
-                <button className='border-2 border-secondary px-2 py-2 mx-2 my-2'>
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
+          <ContactForm />
 
         </div>
       }
