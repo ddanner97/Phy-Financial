@@ -145,7 +145,7 @@ function App() {
             <div className='sub-hero'>
               <p className="pt-4 text-sm">WELCOME!</p>
 
-              <p className="pt-4 pb-4 text-xs border-b-2 border-gold uppercase">We help make your financial freedom dreams a reality. We’re ready to take the mystery out of managing money and make spending it Phun!</p>
+              <p className="pt-4 pb-4 text-xs border-b-2 border-gold uppercase leading-snug">We help make your financial freedom <br></br> dreams a reality. We’re ready to take the mystery out of managing money and make spending it Phun!</p>
             </div>
 
           </div>
