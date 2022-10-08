@@ -12,6 +12,10 @@
 
 }
 
+body {
+  background-color: #EFE7E7;
+}
+
 /* Sidebar */
 .sidebar {
     box-shadow: -26px 1px 13px -2px rgba(106, 55, 55, 0.25);
