@@ -35,6 +35,9 @@ function ContactForm() {
         setLastName('')
         setEmail('')
         setMessage('')
+        setNumber('')
+        setLinkedIn('')
+        setInstagram('')
     }
 
     return (
@@ -63,18 +66,18 @@ function ContactForm() {
 
                 <div className="email flex flex-col my-2">
                     <label>Phone Number:</label>
-                    <input className=" bg-primary border-2 border-secondary py-1" type="text" value={number} onChange={(e) => setEmail(e.target.value)} id="email" name="email"/>
+                    <input className=" bg-primary border-2 border-secondary py-1" type="text" value={number} onChange={(e) => setNumber(e.target.value)} id="number" name="number"/>
                 </div>
 
                 <div className="social-media-inputs flex justify-between my-2">
                     <div className="linkedIn-input grow flex flex-col">
                         <label>LinkedIn:</label>
-                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={linkedIn} onChange={(e) => setFirstName(e.target.value)} id="linkedIn" name="LinkedIn"/>
+                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={linkedIn} onChange={(e) => setLinkedIn(e.target.value)} id="linkedIn" name="LinkedIn"/>
                     </div>
 
                     <div className="instagram-input grow ml-1 flex flex-col">
                         <label>Instagram:</label>
-                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={instagram} onChange={(e) => setLastName(e.target.value)} id="instagram" name="instagram"/>
+                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={instagram} onChange={(e) => setInstagram(e.target.value)} id="instagram" name="instagram"/>
                     </div>
                 </div>
 
