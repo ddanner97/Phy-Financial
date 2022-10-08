@@ -16,6 +16,16 @@ module.exports = {
       fontFamily: {
         poppins: ["Satoshi","Poppins", "sans-serif"],
       },
+      animation: {
+        'flip': 'flip 2s linear .1s',
+      },
+      keyframes: {
+        flip: {
+          '0%, 80%': { 
+            transform: 'rotateY(360deg)' 
+          },
+        }
+      }
     },
     screens: {
       xs: "480px",

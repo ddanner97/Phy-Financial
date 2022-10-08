@@ -33,11 +33,11 @@ function App() {
       }
 
       {!loading &&
-        <div className="main-view h-screen bg-primary text-secondary px-2">
+        <div className="main-view h-screen bg-primary text-secondary px-4">
 
         {/* Header - Navigation Bar */}
         <div className="flex">
-          <h1 className='text-2xl font-bold grow py-2'>Phy/</h1>
+          <h1 className='text-2xl font-bold grow py-4'>Phy/</h1>
 
           {viewSidebar &&
             <div className="sidebar absolute h-screen bg-secondary z-10 drop-shadow-2xl px-20 right-0">

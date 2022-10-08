@@ -53,6 +53,19 @@
               opacity 0.55s ease;
 }
 
+/* Loading */
+.waviy {
+    position: relative;
+}
+
+.waviy span {
+/* position: relative; */
+/* display: inline-block; */
+font-size: 40px;
+color: #EFE7E7;
+text-transform: uppercase;
+}
+
 #menuToggle span:first-child
 {
   transform-origin: 0% 0%;
