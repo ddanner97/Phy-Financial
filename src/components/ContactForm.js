@@ -39,12 +39,12 @@ function ContactForm() {
 
             <form ref={form}>
                 <div className="name flex justify-between my-2">
-                    <div className="first-name flex flex-col">
+                    <div className="first-name grow flex flex-col">
                         <label>First name:</label>
                         <input className=' bg-primary border-2 border-secondary py-1' type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} id="fname" name="fname"/>
                     </div>
 
-                    <div className="last-name flex flex-col">
+                    <div className="last-name grow ml-1 flex flex-col">
                         <label>Last name:</label>
                         <input className=' bg-primary border-2 border-secondary py-1' type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} id="lname" name="lname"/>
                     </div>

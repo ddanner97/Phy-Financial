@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import './main.css'
 
 // Animations
 import gsap from 'gsap'
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-import './main.css'
+// Images
 import kc from './images/kansas_line.png'
 
 // Component
@@ -29,7 +30,7 @@ function App() {
       trigger: elem,
       start: "top 80%",
       end: "bottom 20%",
-      markers: false,
+      markers: true,
       onEnter: function () {
         gsap.fromTo(
           elem,
