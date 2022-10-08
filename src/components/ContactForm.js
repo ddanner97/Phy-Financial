@@ -34,7 +34,7 @@ function ContactForm() {
     }
 
     return (
-        <div id="contact" className="contact h-screen mt-12">
+        <div id="contact" className="contact h-screen">
             <h1 className='pt-4 text-3xl'>Contact</h1>
 
             <form ref={form}>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './main.css'
+import kc from './images/kansas_line.png'
 
 // Component
 import ContactForm from './components/ContactForm';
@@ -72,8 +73,12 @@ function App() {
         </div>
 
         {/* Home - Hero Section */}
-          <div id="home" className='mt-16 pt-16 border-b-2 border-gold'>
-            <h1 className="text-5xl text-secondary font-bold">
+          <div id="home" className='h-screen'>
+            <div className='pt-8'>
+              <img src={kc}></img>
+            </div>
+
+            <h1 className="text-5xl text-secondary font-bold pt-8">
               Ending <br></br>
               Generational <br></br>
               Poverty One <br></br>
@@ -84,8 +89,9 @@ function App() {
             <div className='sub-hero'>
               <p className="pt-4 text-sm">HELLO</p>
 
-              <p className="pt-4 pb-4 text-xs">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
+              <p className="pt-4 pb-4 text-xs border-b-2 border-gold">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
             </div>
+
           </div>
 
           {/* Services */}
