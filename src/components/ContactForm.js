@@ -27,6 +27,10 @@ function ContactForm() {
             });
 
         // Clear state
+        setFirstName('')
+        setLastName('')
+        setEmail('')
+        setMessage('')
     }
 
     return (
