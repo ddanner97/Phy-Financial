@@ -41,7 +41,7 @@ function ContactForm() {
     }
 
     return (
-        <div id="contact" className="contact h-screen revealUp">
+        <div id="contact" className="contact h-screen">
             <h1 className='pt-4 text-3xl'>Contact</h1>
 
             <p className="pt-4 pb-4 text-xs uppercase leading-snug">If you’re ready to end generational poverty in your family, leave your contact information below.</p>
