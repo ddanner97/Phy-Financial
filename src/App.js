@@ -115,11 +115,11 @@ function App() {
                 </li>
 
                 <li className='my-8'>
-                  <a className='mx-2 text-4xl border-b-2'>Services</a>
+                  <a className='mx-2 text-4xl border-b-2' onClick={() => alert("coming soon!")}>Services</a>
                 </li>
 
                 <li className='my-8'>
-                  <a className='mx-2 text-4xl border-b-2'>About</a>
+                  <a className='mx-2 text-4xl border-b-2' onClick={() => alert("coming soon!")}>About</a>
                 </li>
 
                 <li className='my-8'>
@@ -137,17 +137,15 @@ function App() {
             </div>
 
             <h1 className="text-5xl text-secondary font-bold pt-8 drop-shadow-md">
-              Ending <br></br>
-              Generational <br></br>
-              Poverty One <br></br>
-              Family <br></br>
-              At A Time <br></br>
+              Improving <br></br>
+              Lives Through <br></br>
+              Financial Literacy <br></br>
             </h1>
 
             <div className='sub-hero'>
-              <p className="pt-4 text-sm">WELCOME,</p>
+              <p className="pt-4 text-sm">WELCOME!</p>
 
-              <p className="pt-4 pb-4 text-xs border-b-2 border-gold">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
+              <p className="pt-4 pb-4 text-xs border-b-2 border-gold uppercase">We help make your financial freedom dreams a reality. We’re ready to take the mystery out of managing money and make spending it Phun! </p>
             </div>
 
           </div>
