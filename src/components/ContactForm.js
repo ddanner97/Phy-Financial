@@ -95,6 +95,19 @@ function ContactForm() {
                     </button>
                 </div>
             </form>
+
+            {/* Links */}
+            <div className="social-media-links py-4">
+                <a href="https://www.linkedin.com/in/phyliciaevelinebuie/">
+                    <i class="fa-brands fa-linkedin text-4xl text-secondary"></i>
+                </a>
+                <a href="https://www.instagram.com/phyliciaeveline/">
+                    <i class="fa-brands fa-instagram text-4xl mx-2 text-secondary"></i>
+                </a>
+                <a>
+                    <i class="fa-brands fa-twitter text-4xl text-secondary"></i>
+                </a>
+            </div>
         </div>
     )
 }
