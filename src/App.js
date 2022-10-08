@@ -18,11 +18,22 @@ function App() {
       {/* Loading Screen */}
       {loading &&
         <div className='absolute h-screen w-screen bg-secondary'>
-          <h1 className=' text-4xl text-primary relative top-2/4 text-center'>Welcome,</h1>
+          {/* <h1 className=' text-4xl text-primary relative top-2/4 text-center'>Welcome,</h1> */}
+          <div className="waviy text-4xl text-primary relative top-2/4 text-center">
+            <span className='animation-flip'>L</span>
+            <span>o</span>
+            <span>a</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>.</span>
+          </div>
         </div>
       }
 
-      <div className="main-view h-screen bg-primary text-secondary px-2">
+      {!loading &&
+        <div className="main-view h-screen bg-primary text-secondary px-2">
 
         {/* Header - Navigation Bar */}
         <div className="flex">
@@ -58,32 +69,68 @@ function App() {
         </div>
 
         {/* Home - Hero Section */}
-        <div id="home" className='mt-16 pt-16 border-b-2 border-gold'>
-          <h1 className="text-5xl text-secondary font-bold">
-            Ending <br></br>
-            Generational <br></br>
-            Poverty One <br></br>
-            Family <br></br>
-            At A Time <br></br>
-          </h1>
+          <div id="home" className='mt-16 pt-16 border-b-2 border-gold'>
+            <h1 className="text-5xl text-secondary font-bold">
+              Ending <br></br>
+              Generational <br></br>
+              Poverty One <br></br>
+              Family <br></br>
+              At A Time <br></br>
+            </h1>
 
-          <div className='sub-hero'>
-            <p className="pt-4 text-sm">HELLO</p>
+            <div className='sub-hero'>
+              <p className="pt-4 text-sm">HELLO</p>
 
-            <p className="pt-4 pb-4 text-xs">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
+              <p className="pt-4 pb-4 text-xs">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
+            </div>
           </div>
+
+          {/* Services */}
+
+          {/* About */}
+
+          {/* Contact */}
+          <div id="contact" className="contact bg-primary">
+            <h1 className='pt-4 text-3xl'>Contact</h1>
+
+            <form>
+              <div className="name flex justify-between my-2">
+                <div className="first-name flex flex-col">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname"/>
+                </div>
+
+                <div className="last-name flex flex-col">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname"/>
+                </div>
+              </div>
+
+              <div className="email flex flex-col my-2">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"/>
+              </div>
+
+              <div className="message flex flex-col my-2">
+                <label for="email">Message:</label>
+                <input className='py-10' type="text" id="email" name="email"/>
+              </div>
+
+              <div className='flex'>
+                <div className='grow'>
+
+                </div>
+                <button>
+                  <p>Submit</p>
+                </button>
+              </div>
+            </form>
+
+
+          </div>
+
         </div>
-
-        {/* Services */}
-
-        {/* About */}
-
-        {/* Contact */}
-        <div className="contact">
-          
-        </div>
-
-      </div>
+      }
 
     </div>
   );
