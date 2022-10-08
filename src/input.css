@@ -21,6 +21,11 @@ body {
     box-shadow: -26px 1px 13px -2px rgba(106, 55, 55, 0.25);
 }
 
+/* Scroll animation */
+.revealUp {
+  opacity: 0;
+  visibility: hidden;
+}
 /* Menu Toggle */
 #menuToggle input
 {

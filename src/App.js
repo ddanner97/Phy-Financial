@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
+
+// Animations
+import gsap from 'gsap'
+import ScrollTrigger from "gsap/ScrollTrigger";
+
 import './main.css'
+import kc from './images/kansas_line.png'
 
 // Component
 import ContactForm from './components/ContactForm';
@@ -14,6 +20,51 @@ function App() {
       setLoading(false)
     }, 2000)
   }, [])
+
+  //Scroll animation
+  gsap.registerPlugin(ScrollTrigger);
+  // REVEAL //
+  gsap.utils.toArray(".revealUp").forEach(function (elem) {
+    ScrollTrigger.create({
+      trigger: elem,
+      start: "top 80%",
+      end: "bottom 20%",
+      markers: false,
+      onEnter: function () {
+        gsap.fromTo(
+          elem,
+          { y: 100, autoAlpha: 0 },
+          {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+          }
+        );
+      },
+      onLeave: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      },
+      onEnterBack: function () {
+        gsap.fromTo(
+          elem,
+          { y: -100, autoAlpha: 0 },
+          {
+            duration: 1.25,
+            y: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+          }
+        );
+      },
+      onLeaveBack: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      }
+    });
+  });
+
 
   return (
     <div className="App font-poppins bg-primary">
@@ -36,7 +87,7 @@ function App() {
       }
 
       {!loading &&
-        <div className="main-view h-screen text-secondary px-4 max-w-3xl mx-auto">
+        <div className="main-view h-screen text-secondary px-4 max-w-5xl mx-auto">
 
         {/* Header - Navigation Bar */}
         <div className="flex">
@@ -72,8 +123,12 @@ function App() {
         </div>
 
         {/* Home - Hero Section */}
-          <div id="home" className='mt-16 pt-16 border-b-2 border-gold'>
-            <h1 className="text-5xl text-secondary font-bold">
+          <div id="home" className='revealUp h-screen'>
+            <div className='pt-8'>
+              <img src={kc}></img>
+            </div>
+
+            <h1 className="text-5xl text-secondary font-bold pt-8 drop-shadow-md">
               Ending <br></br>
               Generational <br></br>
               Poverty One <br></br>
@@ -84,8 +139,9 @@ function App() {
             <div className='sub-hero'>
               <p className="pt-4 text-sm">HELLO</p>
 
-              <p className="pt-4 pb-4 text-xs">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
+              <p className="pt-4 pb-4 text-xs border-b-2 border-gold">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
             </div>
+
           </div>
 
           {/* Services */}
