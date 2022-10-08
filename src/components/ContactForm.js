@@ -37,6 +37,8 @@ function ContactForm() {
         <div id="contact" className="contact h-screen revealUp">
             <h1 className='pt-4 text-3xl'>Contact</h1>
 
+            <p className="pt-4 pb-4 text-xs uppercase">If you’re ready to end generational poverty in your family, leave your contact information below.</p>
+
             <form ref={form}>
                 <div className="name flex justify-between my-2">
                     <div className="first-name grow flex flex-col">
