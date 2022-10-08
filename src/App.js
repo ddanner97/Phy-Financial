@@ -66,6 +66,13 @@ function App() {
     });
   });
 
+  // Component Functionality
+  const toggle = document.getElementById("toggle");
+
+  const handleNavigation = () => {
+    setViewSidebar(false)
+    toggle.checked = false;
+  }
 
   return (
     <div className="App font-poppins bg-primary">
@@ -94,6 +101,12 @@ function App() {
         <div className="flex">
           <h1 className='text-2xl font-bold grow py-4'>Phun Phynancial</h1>
 
+          <button id="menuToggle" className='z-50' onClick={() => viewSidebar ? setViewSidebar(false) : setViewSidebar(true)}>
+            <input id="toggle" type="checkbox" />
+            <span></span>
+            <span></span>
+          </button>
+
           {viewSidebar &&
             <div className="sidebar absolute h-screen bg-secondary z-10 drop-shadow-2xl px-20 right-0">
               <ul className='text-primary relative top-1/3'>
@@ -110,17 +123,11 @@ function App() {
                 </li>
 
                 <li className='my-8'>
-                  <a className='mx-2 text-4xl border-b-2' href="#contact" onClick={() => setViewSidebar(false)}>Contact</a>
+                  <a className='mx-2 text-4xl border-b-2' href="#contact" onClick={() => handleNavigation()}>Contact</a>
                 </li>
               </ul>
             </div>
           }
-
-          <button id="menuToggle" className='z-50' onClick={() => viewSidebar ? setViewSidebar(false) : setViewSidebar(true)}>
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-          </button>
         </div>
 
         {/* Home - Hero Section */}
@@ -138,7 +145,7 @@ function App() {
             </h1>
 
             <div className='sub-hero'>
-              <p className="pt-4 text-sm">HELLO</p>
+              <p className="pt-4 text-sm">WELCOME,</p>
 
               <p className="pt-4 pb-4 text-xs border-b-2 border-gold">IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. VIDEMUSNE UT PUERI NE VERBERIBUS QUIDEM A CONTEMPLANDIS REBUS PERQUIRENDISQUE DETERREANTUR</p>
             </div>
