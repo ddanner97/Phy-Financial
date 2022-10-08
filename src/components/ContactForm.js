@@ -7,6 +7,10 @@ function ContactForm() {
     const [lastName, setLastName] = useState('')
     const [email, setEmail] = useState('')
     const [message, setMessage] = useState('')
+    const [number, setNumber] = useState('')
+    const [linkedIn, setLinkedIn] = useState('')
+    const [instagram, setInstagram] = useState('')
+
 
     const form = useRef()
 
@@ -14,7 +18,7 @@ function ContactForm() {
         e.preventDefault()
 
         if (firstName === '' || lastName === '' || email === '') {
-            alert('Enter a task Name')
+            alert('Please fill out first and last name, along with email')
             return false;
         }
 
@@ -55,6 +59,23 @@ function ContactForm() {
                 <div className="email flex flex-col my-2">
                     <label>Email:</label>
                     <input className=" bg-primary border-2 border-secondary py-1" type="text" value={email} onChange={(e) => setEmail(e.target.value)} id="email" name="email"/>
+                </div>
+
+                <div className="email flex flex-col my-2">
+                    <label>Phone Number:</label>
+                    <input className=" bg-primary border-2 border-secondary py-1" type="text" value={number} onChange={(e) => setEmail(e.target.value)} id="email" name="email"/>
+                </div>
+
+                <div className="social-media-inputs flex justify-between my-2">
+                    <div className="linkedIn-input grow flex flex-col">
+                        <label>LinkedIn:</label>
+                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={linkedIn} onChange={(e) => setFirstName(e.target.value)} id="linkedIn" name="LinkedIn"/>
+                    </div>
+
+                    <div className="instagram-input grow ml-1 flex flex-col">
+                        <label>Instagram:</label>
+                        <input className=' bg-primary border-2 border-secondary py-1' type="text" value={instagram} onChange={(e) => setLastName(e.target.value)} id="instagram" name="instagram"/>
+                    </div>
                 </div>
 
                 <div className="message flex flex-col my-2">
