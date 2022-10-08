@@ -29,7 +29,7 @@ function App() {
       trigger: elem,
       start: "top 80%",
       end: "bottom 20%",
-      markers: true,
+      markers: false,
       onEnter: function () {
         gsap.fromTo(
           elem,
